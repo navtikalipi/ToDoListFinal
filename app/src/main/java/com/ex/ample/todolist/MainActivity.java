@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
         if(!(itemText.equals(""))){
             itemsAdapter.add(itemText);
+            listView.setAdapter(itemsAdapter);                   //fixed this
             input.setText("");
         }
         else{
